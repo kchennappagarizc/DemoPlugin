@@ -8,6 +8,7 @@ import transpile from './transpile';
 import processMarkup from './process-markup';
 import processCSS from './process-css';
 import copyFiles from './copy-files';
+import processLocales from './process-locales';
 
 const debounceWaitTime = 100;
 let isBuilding = false;
@@ -16,7 +17,8 @@ let watchCallback = () => { };
 let watches = [
   { name: 'transpile', callback: transpile, source: project.transpiler.source },
   { name: 'markup', callback: processMarkup, source: project.markupProcessor.source },
-  { name: 'CSS', callback: processCSS, source: project.cssProcessor.source }
+  { name: 'CSS', callback: processCSS, source: project.cssProcessor.source },
+  { name: 'locales', callback: processLocales, source: project.localesProcessor.source }
 ];
 
 if (typeof project.build.copyFiles === 'object') {

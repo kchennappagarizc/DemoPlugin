@@ -5,9 +5,10 @@
     "lives_indefinite": "a life remaining",
     "lives_plural_indefinite": "some lives remaining",
     "friend": "A friend",
-    "friend_male": "A boyfriend",
+    "friend_male": "A boyfriend d",
     "friend_female": "A girlfriend",
     "home": {
         "title": "Title fg"
-      }
+      },
+      "hello_world": "Hallo Welt"
 }

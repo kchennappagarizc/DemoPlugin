@@ -1,4 +1,9 @@
 <template>
-  <h1>${message}</h1>
-  <button i18n="common:button.save"></button>
+  <h1 i18n="hello_world">Hello world</h1>
+
+  <p>Locale: ${ i18n.getLocale() }</p>
+  
+  <button i18n="common:button.save">Save</button>
+  
+  <!-- Existing code, after namespace concept<button i18n="button.save">Save</button> -->
 </template>

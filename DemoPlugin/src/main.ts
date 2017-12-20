@@ -3,7 +3,7 @@ import environment from './environment';
 //import * as r from 'aurelia-typescript-plugin';
 
 export function configure(aurelia: Aurelia) {
-let pluginConfig = { ns: ['translation','nav', 'common']};
+let pluginConfig = { ns: ['translation','nav', 'common', 'global', 'validation'], lng: 'de'};
 
   aurelia.use
     .standardConfiguration()

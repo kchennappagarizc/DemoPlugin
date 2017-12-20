@@ -24,7 +24,7 @@
         "name": "app-bundle.js",
         "source": [
           "[**/*.js]",
-          "**/*.{css,html}"
+          "**/*.{css,html,json}"
         ]
       },
       {
@@ -112,7 +112,8 @@
           "name": "text",
           "extensions": [
             ".html",
-            ".css"
+            ".css",
+            ".json"
           ],
           "stub": true
         }
@@ -140,6 +141,12 @@
     "displayName": "Minimal Minification",
     "fileExtension": ".html",
     "source": "src/**/*.html"
+  },
+  "localesProcessor": {
+    "id": "none",
+    "displayName": "None",
+    "fileExtension": ".json",
+    "source": "locales/**/*.json"
   },
   "cssProcessor": {
     "id": "none",
